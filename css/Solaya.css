@@ -267,3 +267,105 @@ section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
   background: transparent !important;
   border-top-left-radius: inherit;
 }
+
+/* === Blue panel with TOP-LEFT curve (whole section) === */
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"],
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-border,
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background,
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background-overlay {
+  /* canvas behind the rounded corner */
+  background: #f1f0e1 !important;
+}
+
+/* The blue “card” that is curved + clips all content */
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrapper {
+  --curve: 200px;
+  position: relative;
+  background: #4a73c0 !important;      /* blue fill */
+  border-top-left-radius: var(--curve); /* the curve */
+  overflow: hidden;                      /* clip image/text inside */
+}
+
+/* Belt & braces: make inner bits inherit the curve and not repaint blue */
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content,
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] [data-fluid-engine="true"],
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-block,
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-image-content,
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
+  background: transparent !important;
+  border-top-left-radius: inherit;
+}
+
+/* === Footer section (top-right curve, white outside) === */
+#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"],
+#footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) {
+  --footer-canvas-bg: #fff;      /* outside the curve (behind it) */
+  --footer-card-bg:   #f1f0e1;   /* beige inside the section */
+  --footer-curve:     200px;     /* curve size */
+  position: relative;
+  background: var(--footer-canvas-bg) !important; /* what you see around the curve */
+  isolation: isolate; /* keeps stacking tidy */
+}
+
+/* Remove Squarespace’s own section bg so it doesn’t fight us */
+#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .section-background,
+#footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .section-background {
+  background: transparent !important;
+}
+
+/* Paint the beige “card” and curve its TOP-RIGHT corner */
+#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"]::before,
+#footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--footer-card-bg);
+  border-top-right-radius: var(--footer-curve);
+  z-index: 0;           /* sits behind the content */
+  pointer-events: none;
+}
+
+/* Ensure all content sits above the pseudo background */
+#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .section-border,
+#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .content-wrapper,
+#footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .section-border,
+#footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* (Optional) slightly smaller radius on mobile */
+@media (max-width: 767px) {
+  #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"],
+  #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) {
+    --footer-curve: 150px;
+  }
+}
+
+/* Footer contact link = same color as surrounding text */
+#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a {
+  color: inherit !important;
+  text-decoration-color: currentColor; /* keep underline in the same color */
+}
+#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:hover,
+#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:focus,
+#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:visited {
+  color: inherit !important;
+  text-decoration-color: currentColor;
+}
+
+/* Newsletter description text */
+.newsletter-form-header-description p {
+  color: #252525 !important;
+}
+
+/* Newsletter form button override */
+.newsletter-form-button.sqs-button-element--primary {
+  background-color: #252525 !important;
+  border-color: #252525 !important;
+}
+
+.newsletter-form-button.sqs-button-element--primary .newsletter-form-button-label {
+  color: #fff !important; /* keep text legible */
+}
+
