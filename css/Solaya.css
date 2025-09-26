@@ -1,0 +1,269 @@
+/* ============================
+   TYPE (Headings + Body)
+   ============================ */
+h1, h2, h3 {
+  font-family: source-serif-pro, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+p, li {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ============================
+   BODY TYPOGRAPHY (Headings + Paragraphs)
+   ============================ */
+#page h1 {
+  font-family: "source-serif-pro", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3.5rem;
+  line-height: 1.0;
+}
+#page h2 {
+  font-family: "source-serif-pro", serif;
+  font-weight: 400;
+  font-size: 2.9rem;
+  line-height: 1.1;
+}
+#page h3 {
+  font-family: "source-serif-pro", serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+/* Paragraph tiers */
+#page p.p1 {
+  font-family: "source-serif-pro", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+#page p.p2 {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+#page p.p3 {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* ============================
+   NAV TYPOGRAPHY (Desktop + Mobile)
+   ============================ */
+.header-nav-list a,
+.header-menu-nav-list a {
+  font-family: 'Work Sans', sans-serif !important;
+  font-variation-settings: "wght" 550;
+  font-weight: 500; /* fallback */
+  -webkit-text-stroke: 0.25px currentColor;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase !important;
+  color: #4a73c0 !important;
+  text-decoration: none;
+}
+.header-nav-list a:hover,
+.header-menu-nav-list a:hover,
+.header-nav-list a[aria-current],
+.header-menu-nav-list a[aria-current] {
+  color: #4a73c0 !important;
+}
+.header-nav-list a:hover,
+.header-menu-nav-list a:hover {
+  text-decoration: underline !important;
+}
+/* kill persistent underline on active */
+.header .header-nav-wrapper .header-nav-item--active > a,
+.header .header-nav-wrapper .header-nav-item--active .header-nav-folder-title-text,
+.header-nav-list a[aria-current="page"],
+.header-nav-list a[aria-current="true"] {
+  background-image: none !important;
+  background-size: 0 0 !important;
+  background-position: 0 100% !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+/* ============================
+   HEADER LAYOUT (Desktop only)
+   ============================ */
+@media (min-width: 1024px) {
+  .header .header-announcement-bar-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .header-display-desktop .header-inner {
+    max-width: none !important;
+    width: 100% !important;
+  }
+  .header-display-desktop .header-actions { display: none; }
+
+  .header-layout-branding-center .header-display-desktop .header-title-nav-wrapper {
+    max-width: none !important;
+    width: 100% !important;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .header-layout-branding-center .header-display-desktop .header-nav { width: 100%; }
+  .header-display-desktop .header-nav-list {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto; /* L1 L2 [spacer] R1 R2 */
+    column-gap: 0 !important;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .header-display-desktop .header-nav-list > *:nth-child(1) { grid-column: 1; }
+  .header-display-desktop .header-nav-list > *:nth-child(2) { grid-column: 2; }
+  .header-display-desktop .header-nav-list > *:nth-child(3) { grid-column: 4; justify-self: end; }
+  .header-display-desktop .header-nav-list > *:nth-child(4) { grid-column: 5; }
+
+  .header-display-desktop .header-nav-list > * {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .header-display-desktop { position: relative; }
+  .header-layout-branding-center .header-display-desktop .header-title {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  body:not(.header--menu-open) [data-header-style="solid"].header
+  .header-nav-wrapper .header-nav-item--active > a,
+  body:not(.header--menu-open) [data-header-style="solid"].header
+  .header-nav-wrapper .header-nav-item--active .header-nav-folder-title-text {
+    background-image: none !important;
+    background-size: 0 0 !important;
+    border-bottom: 0 !important;
+    text-decoration: none !important;
+  }
+}
+
+/* ============================
+   THEME TOKENS
+   ============================ */
+:root {
+  --solaya-cream: #fffdf2;
+  --hero-curve: 200px;    /* adjust to taste */
+  --header-offset: 72px;  /* JS can overwrite with real header height */
+}
+
+/* Site bg + header the same cream */
+body { background: var(--solaya-cream); }
+[data-header-style="solid"].header,
+[data-header-style="solid"] .header-background {
+  background: var(--solaya-cream) !important;
+}
+
+/* ============================
+   FIRST SECTION (Hero)
+   ============================ */
+#sections > section.page-section:first-of-type {
+  border-top-left-radius: var(--hero-curve);
+  overflow: hidden;
+  margin-top: var(--header-offset);
+  padding-top: 0 !important;
+  background: transparent !important;
+  position: relative;
+}
+#sections > section.page-section:first-of-type > .section-border,
+#sections > section.page-section:first-of-type .section-background,
+#sections > section.page-section:first-of-type .section-background-overlay,
+#sections > section.page-section:first-of-type .section-background img {
+  border-top-left-radius: inherit;
+  background: transparent !important;
+}
+#sections > section.page-section:first-of-type .content-wrapper {
+  padding-top: calc(var(--header-offset) + 8px) !important;
+  border-top-left-radius: inherit;
+}
+@media (max-width: 767px) {
+  #sections > section.page-section:first-of-type { --hero-curve: 180px; }
+}
+
+/* =========================================================
+   SECOND SECTION (Solaya Retreats “card” with bottom-right curve)
+   – Scoped tightly so it won’t affect other sections
+   ========================================================= */
+
+/* Choose any selector that matches this section; keeping all three is safe */
+#sections > section.page-section:nth-of-type(2),
+section:has(.fe-68d2a3211f504e1a30d9123d),
+section[data-section-id="68d2a3211f504e1a30d9123d"] {
+  --card-bg: #ffffff;   /* the white card */
+  --canvas-bg: #f1f0e1; /* background that should show around the curve */
+  position: relative;
+  isolation: isolate;                /* own stacking context */
+  background: var(--canvas-bg) !important;
+}
+
+/* Remove the built-in background so it doesn’t compete */
+#sections > section.page-section:nth-of-type(2) .section-background,
+section:has(.fe-68d2a3211f504e1a30d9123d) .section-background,
+section[data-section-id="68d2a3211f504e1a30d9123d"] .section-background {
+  background: transparent !important;
+}
+
+/* Paint the white card as a pseudo element and curve it */
+#sections > section.page-section:nth-of-type(2)::before,
+section:has(.fe-68d2a3211f504e1a30d9123d)::before,
+section[data-section-id="68d2a3211f504e1a30d9123d"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--card-bg);
+  border-bottom-right-radius: var(--hero-curve, 200px);
+  z-index: 0;             /* under actual content */
+  pointer-events: none;
+}
+
+/* Ensure content sits above the pseudo card */
+#sections > section.page-section:nth-of-type(2) .section-border,
+#sections > section.page-section:nth-of-type(2) .content-wrapper,
+section:has(.fe-68d2a3211f504e1a30d9123d) .section-border,
+section:has(.fe-68d2a3211f504e1a30d9123d) .content-wrapper,
+section[data-section-id="68d2a3211f504e1a30d9123d"] .section-border,
+section[data-section-id="68d2a3211f504e1a30d9123d"] .content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Blue panel with TOP-LEFT curve (whole section) === */
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"],
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-border,
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background,
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background-overlay {
+  /* canvas behind the rounded corner */
+  background: #f1f0e1 !important;
+}
+
+/* The blue “card” that is curved + clips all content */
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrapper {
+  --curve: 200px;
+  position: relative;
+  background: #4a73c0 !important;      /* blue fill */
+  border-top-left-radius: var(--curve); /* the curve */
+  overflow: hidden;                      /* clip image/text inside */
+}
+
+/* Belt & braces: make inner bits inherit the curve and not repaint blue */
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content,
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] [data-fluid-engine="true"],
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-block,
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-image-content,
+section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
+  background: transparent !important;
+  border-top-left-radius: inherit;
+}
