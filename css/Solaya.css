@@ -1,12 +1,12 @@
 /* ============================
    TYPE (Headings + Body)
    ============================ */
-h1, h2, h3 {
+body.collection-68ca7fc3ea57ed4bb5f9c168 h1, h2, h3 {
   font-family: source-serif-pro, serif;
   font-weight: 300;
   font-style: normal;
 }
-p, li {
+body.collection-68ca7fc3ea57ed4bb5f9c168 p, li {
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -15,20 +15,20 @@ p, li {
 /* ============================
    BODY TYPOGRAPHY (Headings + Paragraphs)
    ============================ */
-#page h1 {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #page h1 {
   font-family: "source-serif-pro", serif;
   font-weight: 300;
   font-style: normal;
   font-size: 3.5rem;
   line-height: 1.0;
 }
-#page h2 {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #page h2 {
   font-family: "source-serif-pro", serif;
   font-weight: 400;
   font-size: 2.9rem;
   line-height: 1.1;
 }
-#page h3 {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #page h3 {
   font-family: "source-serif-pro", serif;
   font-weight: 300;
   font-size: 1.4rem;
@@ -36,20 +36,20 @@ p, li {
 }
 
 /* Paragraph tiers */
-#page p.p1 {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #page p.p1 {
   font-family: "source-serif-pro", serif;
   font-style: italic;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.2;
 }
-#page p.p2 {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #page p.p2 {
   font-family: "aktiv-grotesk", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.8;
 }
-#page p.p3 {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #page p.p3 {
   font-family: "aktiv-grotesk", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
@@ -60,7 +60,7 @@ p, li {
    NAV TYPOGRAPHY (Desktop + Mobile)
    ============================ */
 .header-nav-list a,
-.header-menu-nav-list a {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-menu-nav-list a {
   font-family: 'Work Sans', sans-serif !important;
   font-variation-settings: "wght" 550;
   font-weight: 500; /* fallback */
@@ -74,18 +74,18 @@ p, li {
 .header-nav-list a:hover,
 .header-menu-nav-list a:hover,
 .header-nav-list a[aria-current],
-.header-menu-nav-list a[aria-current] {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-menu-nav-list a[aria-current] {
   color: #4a73c0 !important;
 }
 .header-nav-list a:hover,
-.header-menu-nav-list a:hover {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-menu-nav-list a:hover {
   text-decoration: underline !important;
 }
 /* kill persistent underline on active */
 .header .header-nav-wrapper .header-nav-item--active > a,
 .header .header-nav-wrapper .header-nav-item--active .header-nav-folder-title-text,
 .header-nav-list a[aria-current="page"],
-.header-nav-list a[aria-current="true"] {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-nav-list a[aria-current="true"] {
   background-image: none !important;
   background-size: 0 0 !important;
   background-position: 0 100% !important;
@@ -98,43 +98,43 @@ p, li {
    HEADER LAYOUT (Desktop only)
    ============================ */
 @media (min-width: 1024px) {
-  .header .header-announcement-bar-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header .header-announcement-bar-wrapper {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .header-display-desktop .header-inner {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-display-desktop .header-inner {
     max-width: none !important;
     width: 100% !important;
   }
-  .header-display-desktop .header-actions { display: none; }
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-display-desktop .header-actions { display: none; }
 
-  .header-layout-branding-center .header-display-desktop .header-title-nav-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-layout-branding-center .header-display-desktop .header-title-nav-wrapper {
     max-width: none !important;
     width: 100% !important;
     padding-left: 24px;
     padding-right: 24px;
   }
 
-  .header-layout-branding-center .header-display-desktop .header-nav { width: 100%; }
-  .header-display-desktop .header-nav-list {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-layout-branding-center .header-display-desktop .header-nav { width: 100%; }
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-display-desktop .header-nav-list {
     display: grid;
     grid-template-columns: auto auto 1fr auto auto; /* L1 L2 [spacer] R1 R2 */
     column-gap: 0 !important;
     align-items: center;
     white-space: nowrap;
   }
-  .header-display-desktop .header-nav-list > *:nth-child(1) { grid-column: 1; }
-  .header-display-desktop .header-nav-list > *:nth-child(2) { grid-column: 2; }
-  .header-display-desktop .header-nav-list > *:nth-child(3) { grid-column: 4; justify-self: end; }
-  .header-display-desktop .header-nav-list > *:nth-child(4) { grid-column: 5; }
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-display-desktop .header-nav-list > *:nth-child(1) { grid-column: 1; }
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-display-desktop .header-nav-list > *:nth-child(2) { grid-column: 2; }
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-display-desktop .header-nav-list > *:nth-child(3) { grid-column: 4; justify-self: end; }
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-display-desktop .header-nav-list > *:nth-child(4) { grid-column: 5; }
 
-  .header-display-desktop .header-nav-list > * {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-display-desktop .header-nav-list > * {
     padding-left: 50px !important;
     padding-right: 50px !important;
   }
 
-  .header-display-desktop { position: relative; }
-  .header-layout-branding-center .header-display-desktop .header-title {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-display-desktop { position: relative; }
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-layout-branding-center .header-display-desktop .header-title {
     position: absolute; left: 50%; top: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -143,7 +143,7 @@ p, li {
   body:not(.header--menu-open) [data-header-style="solid"].header
   .header-nav-wrapper .header-nav-item--active > a,
   body:not(.header--menu-open) [data-header-style="solid"].header
-  .header-nav-wrapper .header-nav-item--active .header-nav-folder-title-text {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .header-nav-wrapper .header-nav-item--active .header-nav-folder-title-text {
     background-image: none !important;
     background-size: 0 0 !important;
     border-bottom: 0 !important;
@@ -161,16 +161,16 @@ p, li {
 }
 
 /* Site bg + header the same cream */
-body { background: var(--solaya-cream); }
+body.collection-68ca7fc3ea57ed4bb5f9c168 body { background: var(--solaya-cream); }
 [data-header-style="solid"].header,
-[data-header-style="solid"] .header-background {
+body.collection-68ca7fc3ea57ed4bb5f9c168 [data-header-style="solid"] .header-background {
   background: var(--solaya-cream) !important;
 }
 
 /* ============================
    FIRST SECTION (Hero)
    ============================ */
-body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type {
   border-top-left-radius: var(--hero-curve);
   overflow: hidden;
   margin-top: var(--header-offset);
@@ -181,16 +181,16 @@ body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-
 body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type > .section-border,
 body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type .section-background,
 body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type .section-background-overlay,
-body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type .section-background img {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type .section-background img {
   border-top-left-radius: inherit;
   background: transparent !important;
 }
-body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type .content-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type .content-wrapper {
   padding-top: calc(var(--header-offset) + 8px) !important;
   border-top-left-radius: inherit;
 }
 @media (max-width: 767px) {
-  body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type { --hero-curve: 180px; }
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type { --hero-curve: 180px; }
 }
 
 /* =========================================================
@@ -201,7 +201,7 @@ body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-
 /* Choose any selector that matches this section; keeping all three is safe */
 body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:nth-of-type(2),
 section:has(.fe-68d2a3211f504e1a30d9123d),
-section[data-section-id="68d2a3211f504e1a30d9123d"] {
+body.collection-68ca7fc3ea57ed4bb5f9c168 section[data-section-id="68d2a3211f504e1a30d9123d"] {
   --card-bg: #ffffff;   /* the white card */
   --canvas-bg: #f1f0e1; /* background that should show around the curve */
   position: relative;
@@ -212,14 +212,14 @@ section[data-section-id="68d2a3211f504e1a30d9123d"] {
 /* Remove the built-in background so it doesn’t compete */
 body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:nth-of-type(2) .section-background,
 section:has(.fe-68d2a3211f504e1a30d9123d) .section-background,
-section[data-section-id="68d2a3211f504e1a30d9123d"] .section-background {
+body.collection-68ca7fc3ea57ed4bb5f9c168 section[data-section-id="68d2a3211f504e1a30d9123d"] .section-background {
   background: transparent !important;
 }
 
 /* Paint the white card as a pseudo element and curve it */
 body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:nth-of-type(2)::before,
 section:has(.fe-68d2a3211f504e1a30d9123d)::before,
-section[data-section-id="68d2a3211f504e1a30d9123d"]::before {
+body.collection-68ca7fc3ea57ed4bb5f9c168 section[data-section-id="68d2a3211f504e1a30d9123d"]::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -235,7 +235,7 @@ body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:nth-of
 section:has(.fe-68d2a3211f504e1a30d9123d) .section-border,
 section:has(.fe-68d2a3211f504e1a30d9123d) .content-wrapper,
 section[data-section-id="68d2a3211f504e1a30d9123d"] .section-border,
-section[data-section-id="68d2a3211f504e1a30d9123d"] .content-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 section[data-section-id="68d2a3211f504e1a30d9123d"] .content-wrapper {
   position: relative;
   z-index: 1;
 }
@@ -244,13 +244,13 @@ section[data-section-id="68d2a3211f504e1a30d9123d"] .content-wrapper {
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"],
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-border,
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background,
-body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background-overlay {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background-overlay {
   /* canvas behind the rounded corner */
   background: #f1f0e1 !important;
 }
 
 /* The blue “card” that is curved + clips all content */
-body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrapper {
   --curve: 200px;
   position: relative;
   background: #4a73c0 !important;      /* blue fill */
@@ -263,7 +263,7 @@ body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="6
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] [data-fluid-engine="true"],
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-block,
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-image-content,
-body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
   background: transparent !important;
   border-top-left-radius: inherit;
 }
@@ -272,13 +272,13 @@ body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="6
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"],
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-border,
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background,
-body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background-overlay {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background-overlay {
   /* canvas behind the rounded corner */
   background: #f1f0e1 !important;
 }
 
 /* The blue “card” that is curved + clips all content */
-body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrapper {
   --curve: 200px;
   position: relative;
   background: #4a73c0 !important;      /* blue fill */
@@ -291,14 +291,14 @@ body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="6
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] [data-fluid-engine="true"],
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-block,
 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-image-content,
-body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
   background: transparent !important;
   border-top-left-radius: inherit;
 }
 
 /* === Footer section (top-right curve, white outside) === */
 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"],
-body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) {
   --footer-canvas-bg: #fff;      /* outside the curve (behind it) */
   --footer-card-bg:   #f1f0e1;   /* beige inside the section */
   --footer-curve:     200px;     /* curve size */
@@ -309,13 +309,13 @@ body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:h
 
 /* Remove Squarespace’s own section bg so it doesn’t fight us */
 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .section-background,
-body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .section-background {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .section-background {
   background: transparent !important;
 }
 
 /* Paint the beige “card” and curve its TOP-RIGHT corner */
 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"]::before,
-body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca)::before {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca)::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -329,7 +329,7 @@ body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:h
 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .section-border,
 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .content-wrapper,
 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .section-border,
-body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .content-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .content-wrapper {
   position: relative;
   z-index: 1;
 }
@@ -337,35 +337,34 @@ body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:h
 /* (Optional) slightly smaller radius on mobile */
 @media (max-width: 767px) {
   body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"],
-  body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) {
     --footer-curve: 150px;
   }
 }
 
 /* Footer contact link = same color as surrounding text */
-body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a {
   color: inherit !important;
   text-decoration-color: currentColor; /* keep underline in the same color */
 }
 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:hover,
 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:focus,
-body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:visited {
+body.collection-68ca7fc3ea57ed4bb5f9c168 body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:visited {
   color: inherit !important;
   text-decoration-color: currentColor;
 }
 
 /* Newsletter description text */
-.newsletter-form-header-description p {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .newsletter-form-header-description p {
   color: #252525 !important;
 }
 
 /* Newsletter form button override */
-.newsletter-form-button.sqs-button-element--primary {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .newsletter-form-button.sqs-button-element--primary {
   background-color: #252525 !important;
   border-color: #252525 !important;
 }
 
-.newsletter-form-button.sqs-button-element--primary .newsletter-form-button-label {
+body.collection-68ca7fc3ea57ed4bb5f9c168 .newsletter-form-button.sqs-button-element--primary .newsletter-form-button-label {
   color: #fff !important; /* keep text legible */
 }
-
