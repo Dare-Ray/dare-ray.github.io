@@ -338,20 +338,24 @@ section.page-section[data-section-id="68d2a3211f504e1a30d9123d"] {
   background: #f1f0e1 !important;                  /* beige canvas */
 }
 
-/* HOME — Section 2: restore pseudo-card with bottom-right curve */
-section.page-section[data-section-id="68d2a3211f504e1a30d9123d"] {
-  --card-bg: #ffffff;      /* white card */
-  --canvas-bg: #f1f0e1;    /* beige outside the curve */
+/* HOME — Section 2 “card” with bottom-right curve (position-scoped) */
+.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:nth-of-type(2) {
+  --card-bg: #fff;         /* white card */
+  --canvas-bg: #f1f0e1;    /* beige around the curve */
   position: relative;
   isolation: isolate;
   background: var(--canvas-bg) !important;
 }
-section.page-section[data-section-id="68d2a3211f504e1a30d9123d"] .section-background {
+
+/* Neutralise Squarespace’s own section background for this section */
+.collection-68ca7fc3ea57ed4bb5f9c168
+#sections > section.page-section:nth-of-type(2) .section-background {
   background: transparent !important;
 }
 
-/* the full-bleed white card that we round */
-section.page-section[data-section-id="68d2a3211f504e1a30d9123d"]::before {
+/* Paint the white card and round the bottom-right corner */
+.collection-68ca7fc3ea57ed4bb5f9c168
+#sections > section.page-section:nth-of-type(2)::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -361,16 +365,30 @@ section.page-section[data-section-id="68d2a3211f504e1a30d9123d"]::before {
   pointer-events: none;
 }
 
-/* ensure real content sits above the pseudo-card */
-section.page-section[data-section-id="68d2a3211f504e1a30d9123d"] .section-border,
-section.page-section[data-section-id="68d2a3211f504e1a30d9123d"] .content-wrapper {
+/* Ensure real content renders above the pseudo-card */
+.collection-68ca7fc3ea57ed4bb5f9c168
+#sections > section.page-section:nth-of-type(2) .section-border,
+.collection-68ca7fc3ea57ed4bb5f9c168
+#sections > section.page-section:nth-of-type(2) .content-wrapper {
   position: relative;
   z-index: 1;
 }
 
-/* undo the previous experiment that put the card on the wrapper */
-section.page-section[data-section-id="68d2a3211f504e1a30d9123d"] .content-wrapper {
+/* Safety: undo any earlier wrapper-rounded attempt */
+.collection-68ca7fc3ea57ed4bb5f9c168
+#sections > section.page-section:nth-of-type(2) .content-wrapper {
   background: transparent !important;
   border-bottom-right-radius: 0 !important;
   overflow: visible !important;
 }
+
+section.page-section:has(.fe-68d2a3211f504e1a30d9123d)::before {
+  content:""; position:absolute; inset:0;
+  background:#fff; border-bottom-right-radius: var(--hero-curve, 200px);
+  z-index:0; pointer-events:none;
+}
+section.page-section:has(.fe-68d2a3211f504e1a30d9123d) .section-background { background:transparent !important; }
+section.page-section:has(.fe-68d2a3211f504e1a30d9123d) { background:#f1f0e1 !important; isolation:isolate; }
+section.page-section:has(.fe-68d2a3211f504e1a30d9123d) .section-border,
+section.page-section:has(.fe-68d2a3211f504e1a30d9123d) .content-wrapper { position:relative; z-index:1; }
+
