@@ -251,6 +251,58 @@ section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
 }
 
 /* =========================================================
+   HOME PAGE — Footer (top-right curve, WHITE outside)
+   ========================================================= */
+.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] {
+  --footer-canvas-bg: #ffffff;  /* outside */
+  --footer-card-bg:   #f1f0e1;  /* beige inside */
+  --footer-curve:     200px;
+  position: relative;
+  background: var(--footer-canvas-bg) !important;
+  isolation: isolate;
+}
+.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--footer-card-bg);
+  border-top-right-radius: var(--footer-curve);
+  z-index: 0;
+  pointer-events: none;
+}
+.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .section-border,
+.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================================
+   RETREATS PAGE — Footer (top-right curve, BLUE outside)
+   ========================================================= */
+.collection-68daaf031e4c997455e75ce1 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] {
+  --footer-canvas-bg: #4a73c0;  /* outside */
+  --footer-card-bg:   #f1f0e1;  /* beige inside */
+  --footer-curve:     200px;
+  position: relative;
+  background: var(--footer-canvas-bg) !important;
+  isolation: isolate;
+}
+.collection-68daaf031e4c997455e75ce1 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--footer-card-bg);
+  border-top-right-radius: var(--footer-curve);
+  z-index: 0;
+  pointer-events: none;
+}
+.collection-68daaf031e4c997455e75ce1 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .section-border,
+.collection-68daaf031e4c997455e75ce1 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================================
    FOOTER — SITE-WIDE (top-right curve, white outside)
    ========================================================= */
 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"],
@@ -427,3 +479,41 @@ section.page-section:has(.fe-68dbb72798f9e300731d2a67) img {
     --curve: 120px;
   }
 }
+
+/* RETREATS PAGE ONLY — Flights section:
+   Blue outside the curve, white panel inside (top-left radius) */
+body.collection-68daaf031e4c997455e75ce1
+section.page-section:has(.fe-68daaf031e4c997455e75cec),
+body.collection-68daaf031e4c997455e75ce1
+section.page-section:has(.fe-68daaf031e4c997455e75cec) .section-border,
+body.collection-68daaf031e4c997455e75ce1
+section.page-section:has(.fe-68daaf031e4c997455e75cec) .section-background,
+body.collection-68daaf031e4c997455e75ce1
+section.page-section:has(.fe-68daaf031e4c997455e75cec) .section-background-overlay {
+  background: #4a73c0 !important; /* BLUE canvas behind the curve */
+}
+
+body.collection-68daaf031e4c997455e75ce1
+section.page-section:has(.fe-68daaf031e4c997455e75cec) .content-wrapper {
+  --curve: 200px;
+  position: relative;
+  background: #ffffff !important;      /* white panel */
+  border-top-left-radius: var(--curve); /* the curve */
+  overflow: hidden;                     /* mask image + text */
+  z-index: 1;
+}
+
+/* keep internals transparent; wrapper does the masking */
+body.collection-68daaf031e4c997455e75ce1
+section.page-section:has(.fe-68daaf031e4c997455e75cec) .content,
+body.collection-68daaf031e4c997455e75ce1
+section.page-section:has(.fe-68daaf031e4c997455e75cec) [data-fluid-engine="true"],
+body.collection-68daaf031e4c997455e75ce1
+section.page-section:has(.fe-68daaf031e4c997455e75cec) .sqs-block,
+body.collection-68daaf031e4c997455e75ce1
+section.page-section:has(.fe-68daaf031e4c997455e75cec) .sqs-image-content,
+body.collection-68daaf031e4c997455e75ce1
+section.page-section:has(.fe-68daaf031e4c997455e75cec) img {
+  background: transparent !important;
+}
+
