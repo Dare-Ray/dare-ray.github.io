@@ -517,3 +517,15 @@ section.page-section:has(.fe-68daaf031e4c997455e75cec) img {
   background: transparent !important;
 }
 
+
+/* =========================================================
+   GLOBAL — Scale down all section corner radii on mobile
+   ========================================================= */
+@media (max-width: 640px) {
+  section.page-section .content-wrapper {
+    --curve: 150px !important;
+    --hero-curve: 150px !important;
+    --footer-curve: 150px !important;
+    border-radius: var(--curve);
+  }
+}
