@@ -392,3 +392,38 @@ section.page-section:has(.fe-68d2a3211f504e1a30d9123d) { background:#f1f0e1 !imp
 section.page-section:has(.fe-68d2a3211f504e1a30d9123d) .section-border,
 section.page-section:has(.fe-68d2a3211f504e1a30d9123d) .content-wrapper { position:relative; z-index:1; }
 
+
+/* RETREATS — Blue panel with TOP-RIGHT curve (targets the section that contains the FE grid you pasted) */
+section.page-section:has(.fe-68dbb72798f9e300731d2a67),
+section.page-section:has(.fe-68dbb72798f9e300731d2a67) .section-border,
+section.page-section:has(.fe-68dbb72798f9e300731d2a67) .section-background,
+section.page-section:has(.fe-68dbb72798f9e300731d2a67) .section-background-overlay {
+  /* canvas outside the curve */
+  background: #f1f0e1 !important;
+}
+
+/* the actual blue block */
+section.page-section:has(.fe-68dbb72798f9e300731d2a67) .content-wrapper {
+  --curve: 200px; /* tweak to taste */
+  position: relative;
+  background: #4a73c0 !important;
+  border-top-right-radius: var(--curve);
+  overflow: hidden; /* clip content to the curve */
+}
+
+/* keep internals transparent and inheriting the corner */
+section.page-section:has(.fe-68dbb72798f9e300731d2a67) .content,
+section.page-section:has(.fe-68dbb72798f9e300731d2a67) [data-fluid-engine="true"],
+section.page-section:has(.fe-68dbb72798f9e300731d2a67) .sqs-block,
+section.page-section:has(.fe-68dbb72798f9e300731d2a67) .sqs-image-content,
+section.page-section:has(.fe-68dbb72798f9e300731d2a67) img {
+  background: transparent !important;
+  border-top-right-radius: inherit;
+}
+
+/* Optional: smaller radius on mobile */
+@media (max-width: 640px) {
+  section.page-section:has(.fe-68dbb72798f9e300731d2a67) .content-wrapper {
+    --curve: 120px;
+  }
+}
