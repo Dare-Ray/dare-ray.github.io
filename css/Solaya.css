@@ -170,7 +170,7 @@ body { background: var(--solaya-cream); }
 /* ============================
    FIRST SECTION (Hero)
    ============================ */
-#sections > section.page-section:first-of-type {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type {
   border-top-left-radius: var(--hero-curve);
   overflow: hidden;
   margin-top: var(--header-offset);
@@ -178,19 +178,19 @@ body { background: var(--solaya-cream); }
   background: transparent !important;
   position: relative;
 }
-#sections > section.page-section:first-of-type > .section-border,
-#sections > section.page-section:first-of-type .section-background,
-#sections > section.page-section:first-of-type .section-background-overlay,
-#sections > section.page-section:first-of-type .section-background img {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type > .section-border,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type .section-background,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type .section-background-overlay,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type .section-background img {
   border-top-left-radius: inherit;
   background: transparent !important;
 }
-#sections > section.page-section:first-of-type .content-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type .content-wrapper {
   padding-top: calc(var(--header-offset) + 8px) !important;
   border-top-left-radius: inherit;
 }
 @media (max-width: 767px) {
-  #sections > section.page-section:first-of-type { --hero-curve: 180px; }
+  body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:first-of-type { --hero-curve: 180px; }
 }
 
 /* =========================================================
@@ -199,7 +199,7 @@ body { background: var(--solaya-cream); }
    ========================================================= */
 
 /* Choose any selector that matches this section; keeping all three is safe */
-#sections > section.page-section:nth-of-type(2),
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:nth-of-type(2),
 section:has(.fe-68d2a3211f504e1a30d9123d),
 section[data-section-id="68d2a3211f504e1a30d9123d"] {
   --card-bg: #ffffff;   /* the white card */
@@ -210,14 +210,14 @@ section[data-section-id="68d2a3211f504e1a30d9123d"] {
 }
 
 /* Remove the built-in background so it doesn’t compete */
-#sections > section.page-section:nth-of-type(2) .section-background,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:nth-of-type(2) .section-background,
 section:has(.fe-68d2a3211f504e1a30d9123d) .section-background,
 section[data-section-id="68d2a3211f504e1a30d9123d"] .section-background {
   background: transparent !important;
 }
 
 /* Paint the white card as a pseudo element and curve it */
-#sections > section.page-section:nth-of-type(2)::before,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:nth-of-type(2)::before,
 section:has(.fe-68d2a3211f504e1a30d9123d)::before,
 section[data-section-id="68d2a3211f504e1a30d9123d"]::before {
   content: "";
@@ -230,8 +230,8 @@ section[data-section-id="68d2a3211f504e1a30d9123d"]::before {
 }
 
 /* Ensure content sits above the pseudo card */
-#sections > section.page-section:nth-of-type(2) .section-border,
-#sections > section.page-section:nth-of-type(2) .content-wrapper,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:nth-of-type(2) .section-border,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #sections > section.page-section:nth-of-type(2) .content-wrapper,
 section:has(.fe-68d2a3211f504e1a30d9123d) .section-border,
 section:has(.fe-68d2a3211f504e1a30d9123d) .content-wrapper,
 section[data-section-id="68d2a3211f504e1a30d9123d"] .section-border,
@@ -241,16 +241,16 @@ section[data-section-id="68d2a3211f504e1a30d9123d"] .content-wrapper {
 }
 
 /* === Blue panel with TOP-LEFT curve (whole section) === */
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"],
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-border,
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background,
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background-overlay {
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"],
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-border,
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background,
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background-overlay {
   /* canvas behind the rounded corner */
   background: #f1f0e1 !important;
 }
 
 /* The blue “card” that is curved + clips all content */
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrapper {
   --curve: 200px;
   position: relative;
   background: #4a73c0 !important;      /* blue fill */
@@ -259,26 +259,26 @@ section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrappe
 }
 
 /* Belt & braces: make inner bits inherit the curve and not repaint blue */
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content,
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] [data-fluid-engine="true"],
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-block,
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-image-content,
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content,
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] [data-fluid-engine="true"],
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-block,
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-image-content,
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
   background: transparent !important;
   border-top-left-radius: inherit;
 }
 
 /* === Blue panel with TOP-LEFT curve (whole section) === */
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"],
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-border,
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background,
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background-overlay {
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"],
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-border,
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background,
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .section-background-overlay {
   /* canvas behind the rounded corner */
   background: #f1f0e1 !important;
 }
 
 /* The blue “card” that is curved + clips all content */
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrapper {
   --curve: 200px;
   position: relative;
   background: #4a73c0 !important;      /* blue fill */
@@ -287,18 +287,18 @@ section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content-wrappe
 }
 
 /* Belt & braces: make inner bits inherit the curve and not repaint blue */
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content,
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] [data-fluid-engine="true"],
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-block,
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-image-content,
-section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .content,
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] [data-fluid-engine="true"],
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-block,
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] .sqs-image-content,
+body.collection-68ca7fc3ea57ed4bb5f9c168 section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
   background: transparent !important;
   border-top-left-radius: inherit;
 }
 
 /* === Footer section (top-right curve, white outside) === */
-#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"],
-#footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"],
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) {
   --footer-canvas-bg: #fff;      /* outside the curve (behind it) */
   --footer-card-bg:   #f1f0e1;   /* beige inside the section */
   --footer-curve:     200px;     /* curve size */
@@ -308,14 +308,14 @@ section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
 }
 
 /* Remove Squarespace’s own section bg so it doesn’t fight us */
-#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .section-background,
-#footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .section-background {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .section-background,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .section-background {
   background: transparent !important;
 }
 
 /* Paint the beige “card” and curve its TOP-RIGHT corner */
-#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"]::before,
-#footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca)::before {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"]::before,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca)::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -326,30 +326,30 @@ section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
 }
 
 /* Ensure all content sits above the pseudo background */
-#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .section-border,
-#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .content-wrapper,
-#footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .section-border,
-#footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .content-wrapper {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .section-border,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .content-wrapper,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .section-border,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) .content-wrapper {
   position: relative;
   z-index: 1;
 }
 
 /* (Optional) slightly smaller radius on mobile */
 @media (max-width: 767px) {
-  #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"],
-  #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) {
+  body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"],
+  body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section:has(.fe-68d68d7336d5ae0de6d9c6ca) {
     --footer-curve: 150px;
   }
 }
 
 /* Footer contact link = same color as surrounding text */
-#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a {
   color: inherit !important;
   text-decoration-color: currentColor; /* keep underline in the same color */
 }
-#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:hover,
-#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:focus,
-#footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:visited {
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:hover,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:focus,
+body.collection-68ca7fc3ea57ed4bb5f9c168 #footer-sections section.page-section[data-section-id="68d68d7336d5ae0de6d9c6cb"] .sqs-html-content a:visited {
   color: inherit !important;
   text-decoration-color: currentColor;
 }
