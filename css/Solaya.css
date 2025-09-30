@@ -320,3 +320,20 @@ section.page-section[data-section-id="68d2bf2c3baebd3a43c20932"] img {
 .newsletter-form-button.sqs-button-element--primary .newsletter-form-button-label {
   color: #fff !important;
 }
+
+/* HOME — Section 2: make the white card live on the wrapper, not ::before */
+section.page-section[data-section-id="68d2a3211f504e1a30d9123d"]::before {
+  display: none !important;   /* disable the old pseudo-card */
+}
+
+section.page-section[data-section-id="68d2a3211f504e1a30d9123d"] .content-wrapper {
+  background: #fff !important;                     /* white card */
+  border-bottom-right-radius: var(--hero-curve);   /* rounded corner */
+  overflow: hidden;                                /* mask children */
+  position: relative;                              /* keep stacking sane */
+}
+
+/* keep the outer canvas beige */
+section.page-section[data-section-id="68d2a3211f504e1a30d9123d"] {
+  background: #f1f0e1 !important;                  /* beige canvas */
+}
