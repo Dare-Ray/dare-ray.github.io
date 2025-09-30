@@ -517,3 +517,43 @@ section.page-section:has(.fe-68daaf031e4c997455e75cec) img {
   background: transparent !important;
 }
 
+/* ================================
+   Mobile menu unified background
+   ================================ */
+@media (max-width: 767px) {
+  body.header--menu-open .header-menu,
+  body.header--menu-open .header-menu-bg,
+  body.header--menu-open .header-menu-wrapper {
+    background: #fffdf2 !important;
+  }
+
+  /* Also force the header strip (logo + close) */
+  body.header--menu-open .header,
+  body.header--menu-open .header-inner,
+  body.header--menu-open .header-title-nav-wrapper {
+    background: #fffdf2 !important;
+  }
+}
+/* Larger mobile menu items */
+@media (max-width: 767px) {
+  .header--menu-open .header-menu-nav-list a,
+  .header--menu-open .header-nav-list a {
+    font-size: 25px !important;
+    font-weight: 100;
+    padding: 16px 0 !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* ================================
+   Hamburger menu colour
+   ================================ */
+.burger-inner .top-bun,
+.burger-inner .patty,
+.burger-inner .bottom-bun {
+  background-color: #3f62b4 !important; /* replace with your desired colour */
+  height: 2px; /* keep the thickness consistent */
+  width: 100%;
+  border-radius: 2px; /* optional, for smoother edges */
+  transition: background-color 0.3s ease;
+}
